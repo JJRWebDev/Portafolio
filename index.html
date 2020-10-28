@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Desarrollos Web</title>
+	<meta name="description" content="Blueprint: A responsive product grid layout with touch-friendly Flickity galleries and Isotope-powered filter functionality." />
+	<meta name="keywords" content="blueprint, template, layout, grid, responsive, products, store, filter, isotope, flickity" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<!-- Pixel Fabric clothes icons -->
+	<link rel="stylesheet" type="text/css" href="fonts/pixelfabric-clothes/style.css" />
+	<!-- General demo styles & header -->
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	 <!-- Flickity gallery styles -->
+	<link rel="stylesheet" type="text/css" href="css/flickity.css" />
+	<!-- Component styles -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.js"></script>
+</head>
+<body>
+	<!-- Bottom bar with filter and cart info -->
+	<div class="bar">
+		<div class="filter">
+			<span class="filter__label">Sort By: </span>
+			<button class="action filter__item filter__item--selected" data-filter="*">All</button>
+			<button class="action filter__item" data-filter=".socialnetwork"><i class="icon icon-earth"></i><span class="action__text">Web</span></button>
+			<button class="action filter__item" data-filter=".models"><i class="icon icon-codepen"></i><span class="action__text">3D</span></button>
+		</div>
+		<button class="cart" style="display:none;">
+			<i class="cart__icon fa fa-shopping-cart"></i>
+			<span class="text-hidden">Shopping cart</span>
+			<span class="cart__count">0</span>
+		</button>
+	</div>
+	<!-- Main view -->
+	<div class="view">
+		<!-- Blueprint header -->
+		<header class="bp-header cf">
+			<span>PORTFOLIO</span>
+			<h1>Juan Jose Ruiz</h1>
+			<nav>
+				
+			</nav>
+		</header>
+		<!-- Grid -->
+		<section class="grid grid--loading">
+			<!-- Loader -->
+			<img class="grid__loader" src="images/grid.svg" width="60" alt="Loader image" />
+			<!-- Grid sizer for a fluid Isotope (Masonry) layout -->
+			<div class="grid__sizer"></div>
+			<!-- Grid items -->
+			<div class="grid__item grid__item socialnetwork">
+				<div class="slider">
+					<div class="slider__item"><img src="images/cannaworld2.png" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/cannaworld3.png" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Grassyou APP</h3>
+					<span class="meta__brand">Social Network based on PHP, MYSQL, HTML, CSS, JavaScript, JQuery, Java and Android WebView.</span>
+					<span class="meta__brand">User system, responsive view, sharing posts, comments, likes, messages, user profiles, post with photos, latest shared photos, notifications, color themes...</span>
+					<span class="meta__price">4 Months</span>
+				</div>
+				<button style="display:none;" class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item grid__item socialnetwork">
+				<div class="slider">
+					<div class="slider__item"><img src="images/fu22.png" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/fu2.png" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">"FU2" Game Comunity </h3>
+					<span class="meta__brand">Game service comunity web based on PHP, HTML, CSS and Javascript.</span>
+					<span class="meta__brand">Two different games servers; 7DaystoDie and Rust, server status view, online map view, social media contact, rules information, admins, vips, donations with paypal and image banners.</span>
+					<span class="meta__price">2 Days</span>
+				</div>
+				<button style="display:none;" class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item grid__item socialnetwork">
+				<div class="slider">
+					<div class="slider__item"><img src="images/loginsample.png" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Sample Log-in</h3>
+					<span class="meta__brand">Sample Log-in web made with HTML, CSS.</span>
+					<span class="meta__brand">This sample was created as demo in order to choose theme colors and look of a responsive view. Includes free icons source: <a href="https://icomoon.io/" target="_blank">https://icomoon.io/</a>, form components; mail, password, checkbox and buttons. </span>
+					<span class="meta__price">1 Day</span>
+				</div>
+				<button style="display:none;" class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item grid__item socialnetwork">
+				<div class="slider">
+					<div class="slider__item"><img src="images/sampleapp.png" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/sampleapp2.png" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Sample APP</h3>
+					<span class="meta__brand">Fantasy crafting app based on PHP, MYSQL, HTML, CSS, and JavaScript.</span>
+					<span class="meta__brand">Material list, item craft system, inventory, player profile, level, exp system based on farming and crafts, link items and concepts about visual crafting game based on web.</span>
+					<span class="meta__price">1 Week</span>
+				</div>
+				<button style="display:none;" class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item grid__item socialnetwork">
+				<div class="slider">
+					<div class="slider__item"><img src="images/progressbar.png" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Progress Bar</h3>
+					<span class="meta__brand">Progress Bar; HTML, CSS, and JavaScript.</span>
+					<span class="meta__brand">Shows the percentage of a desired quantity over an absolute amount visually, created for an online event to see the progress of the community, shows a percentage table from 0 to 100...</span>
+					<span class="meta__price">2 Hours</span>
+				</div>
+				<button style="display:none;" class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item grid__item models">
+				<div class="slider">
+					<div class="slider__item"><img src="images/rugerredhawk.png" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/rugerredhawk3.png" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/rugerredhawk2.png" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Ruger Redhawk</h3>
+					<span class="meta__brand">Created for Unreal Market - Epic Games.</span>
+					<span class="meta__price">1 Week</span>
+				</div>
+				<button style="display:none;" class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item grid__item models">
+				<div class="slider">
+					<div class="slider__item"><img src="images/bowie.png" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/bowie2.png" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Bowie Hunting Knife</h3>
+					<span class="meta__brand">Created for Unreal Market - Epic Games.</span>
+					<span class="meta__price">1 Day</span>
+				</div>
+				<button style="display:none;" class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item grid__item models">
+				<div class="slider">
+					<div class="slider__item"><img src="images/glassbottle2.png" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/glassbottle.png" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Glass Flask</h3>
+					<span class="meta__brand">Created for private videogame project.</span>
+					<span class="meta__price">4 Hours</span>
+				</div>
+				<button style="display:none;" class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item grid__item models">
+				<div class="slider">
+					<div class="slider__item"><img src="images/classicwheel3.png" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/classicwheel2.png" alt="Dummy" /></div>
+					<div class="slider__item"><img src="images/classicwheel.png" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Classic Wheel</h3>
+					<span class="meta__brand">Created for private videogame project.</span>
+					<span class="meta__price">2 Days</span>
+				</div>
+				<button style="display:none;" class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+			<div class="grid__item grid__item models">
+				<div class="slider">
+					<div class="slider__item"><img src="images/facemodel.png" alt="Dummy" /></div>
+				</div>
+				<div class="meta">
+					<h3 class="meta__title">Face Model</h3>
+					<span class="meta__brand">Created for private videogame project.</span>
+					<span class="meta__price">1 Hour</span>
+				</div>
+				<button style="display:none;" class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+		</section>
+		<!-- /grid-->
+	</div>
+	<!-- /view -->
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/flickity.pkgd.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
